@@ -73,9 +73,55 @@ header {
   width: 100%;
 }
 
+.football-live-title {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 3em;
+}
+
 /* -------------------
   Bonus Section 
   ----------------------*/
+
+.bonus {
+  display: flex;
+  padding: 70px;
+}
+
+.live-match {
+  width: 50%;
+  text-align: center;
+}
+
+.live-match h1 {
+  font-size: 2em;
+  line-height: 0px;
+}
+
+.live-score {
+  display: flex;
+  justify-content: center;
+}
+
+.team {
+  text-align: center;
+  width: 150px;
+  margin: 0px 10px;
+}
+
+.live {
+  color: crimson;
+  text-decoration: underline;
+}
+
+.team p {
+  line-height: 5px;
+}
+
+.team span {
+  color: crimson;
+  text-decoration: underline;
+}
 
 /* ----------------
     Footer 
@@ -116,14 +162,13 @@ footer {
     Media quary 
 ---------------*/
 
-@media only screen and (max-width: 688px) {
+@media (max-width: 688px) {
   .container {
     display: block;
   }
 
   .top-banner {
     width: 100%;
-    border: 1px solid black;
   }
 
   .top-banner img {
@@ -140,5 +185,28 @@ footer {
 
   .players-photos {
     display: block;
+  }
+
+  .bonus {
+    display: block;
+    padding: 0px;
+  }
+  .live-match {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 688px) and (max-width: 992px) {
+  .players-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bonus {
+    display: block;
+    padding: 0px;
+  }
+  .live-match {
+    width: 100%;
+    text-align: center;
   }
 }
